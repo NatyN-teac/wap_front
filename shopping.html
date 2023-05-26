@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/shopping.css">
+    <title>Shop Here</title>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img src="/public/images/logo.png" alt="logo" />
+        <h3>Carro</h3>
+      </div>
+
+      <div class="form-container">
+         <h3 id="headerUsername"></h3>
+        <button type="submit" id="login-btn">Logout</button>
+      </div>
+    </nav>
+   <main>
+        <div style="padding-top: 1em;" class="container">
+            <!-- main content here -->
+            <h3>
+                Product List
+            </h3>
+            <hr />
+           
+
+            <div style="margin-top: 1em;" id="divPatientsList" style="font-size: 1em">
+                
+                <table class="table table-striped" id="mytable">
+                    <thead>
+                        <tr>
+                            <!-- <th scope="col">ID</th> -->
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Stock</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyProductList">
+
+                    </tbody>
+                </table>
+                 <div id="snackbar1">Logged in Successfully.</div>
+
+            </div>
+        </div>
+
+        <div style="padding-top: 1em;" class="container" id="cart-carto">
+            <!-- main content here -->
+            <h3>
+               Your Shopping Cart
+            </h3>
+            <hr>
+
+ <div id="no-cart-message">
+                <p>There is not item in your shopping cart</p>
+            </div>
+            <div class="productContainer" id="divCartList">
+                <table class="table table-striped" id="mytable">
+                    <thead>
+                        <tr>
+                            <!-- <th scope="col">ID</th> -->
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">total</th>
+                            <th scope="col">Add/Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyCartList">
+                         <tfoot id="tfoot">
+                            <tr id="footerRow">
+                            <td colspan="4" style="text-align:end;padding-right: 40px; font-weight: 600;font-size: 25px;">Total</td>
+                            <td id="totalPriceCell" style="font-size: 25px;font-weight:600;">0</td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+
+                </table>
+                 <button type="submit" class="btn-place-order" id="placeOrder">Place Order</button>
+            </div>
+          
+        </div>
+        
+    <footer>
+        <p>Thanks for shopping with CARRO</p>
+    </footer>
+    <script src="./public/js/shopping.js"></script>
+</body>
+</html>

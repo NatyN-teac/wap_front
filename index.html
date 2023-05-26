@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="/public/images/logo.png" alt="logo" />
+        <h3>Carro</h3>
+      </div>
+
+      <form action="" class="form-container">
+        <div class="group">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter Username"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter Password"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-group">
+          <button type="submit" id="login-btn">Login</button>
+        </div>
+      </form>
+    </nav>
+
+    <section class="container">
+      <div id="snackbar">Logged in Successfully.</div>
+      <div class="header-title">
+        <h1>Welcome To CARRO  Store</h1>
+      </div>
+      <article class="hero">
+        <img src="/public/images/cover.png" alt="" />
+      </article>
+    </section>
+    <footer>
+      <p>Carro &copy;2023</p>
+      <p>designed: Nathenael</p>
+    </footer>
+    <script src="/public/js/login.js"></script>
+  </body>
+</html>
